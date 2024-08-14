@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>Recipe</title>
+</head>
+<!-- css stylin area -->
+ <style>
+        body{
+            background-color: #f8f9fa;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .navbar.navbar-expand-lg.navbar-light.bg-light{
+            background-color: #333;
+            align-items: end;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .headline {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .section {
+            padding: 50px 0;
+        }
+
+    </style>
+<body>
+    <!-- navigation bar(Home,Categorization(Veg , Non Veg)Recipe Gallery and Contact) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="indexe.html">Recipe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="indexe.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bowl-food"></i>Recipe Gallery
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="veg.html">Veg</a></li>
+                  <li><a class="dropdown-item" href="nonveg.html">Non Veg</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="hero-image.jpg" alt="Hero Image">
+        <div class="headline">
+            <h1>Welcome to Recipe Sharing</h1>
+            <a class="btn btn-primary" href="nonveg.html">Recipes?</a>
+        </div>
+    </section>
+    <section id="welcome" class="section">
+        <div class="container">
+            <h2 style="color: #333; font-size: 24px; text-align: center; margin-bottom: 20px;">Welcome to our Recipe Sharing Website</h2>
+            <p style="color: #666; font-size: 16px; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id ultricies tincidunt, nisl nunc aliquet nunc, id lacinia nunc nisl id nunc. Sed euismod, nunc id ultricies tincidunt, nisl nunc aliquet nunc, id lacinia nunc nisl id nunc.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center mt-5">
+            <p>&copy; 2024 Recipe Portfolio</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
